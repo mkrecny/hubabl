@@ -1,0 +1,14 @@
+Installation
+----------------
+> install node.js
+> install socket.io
+> install redis
+
+Setup
+-----
+> edit config.js to taste
+> run ./redis-server in the redis package
+> run node nodes/gen-dict.js //this will create a small dataset of random names for chatters
+> run node nodes/server.js
+
+

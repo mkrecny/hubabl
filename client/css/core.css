@@ -1,0 +1,168 @@
+body
+{
+  /*position:absolute;
+  left:0%;
+  top:0%;
+  width:100%;
+  height:100%;*/
+}
+
+#logo
+{
+position:absolute;
+bottom:1%;
+left:.2%;
+font-size:150%;
+color:#FF3D2E;
+/*color:#808080;*/
+}
+
+.create_el
+{
+  display:none;
+}
+
+.join_el
+{
+  display:none;
+}
+
+#prez_cont
+{
+  position:absolute;
+  left:35%;
+  top:30%;
+  width:30%;
+}
+
+#title_msg
+{
+  position:relative;
+  width:100%;
+  float:top;
+  font-weight:bold;
+  font-size:30px;
+  color:#FF3D2E;
+}
+
+#topic_input
+{
+  position:relative;
+  width:100%;
+  float:top;
+  font-size:20px;
+  color:#808080;
+}
+
+#chat_box
+{
+  position:absolute;
+  top:3%;
+  height:90%;
+  left:20%;
+  width:60%;
+}
+
+#topic_box
+{
+  position:absolute;
+  top:0%;
+  left:0%;
+  width:100%;
+  height:5%;
+  text-align:center;
+  font-size:100%;
+  font-weight:bold;
+  border-bottom:1px solid #999999;
+}
+
+#msg_box
+{
+  position:absolute;
+  top:5%;
+  left:0%;
+  width:100%;
+  height:80%;
+  overflow:auto;
+}
+
+#msg_input_box
+{
+  position:absolute;
+  top:85%;
+  left:0%;
+  width:100%;
+  height:15%;
+  font-size:90%;
+}
+
+#sharing
+{
+  position:absolute;
+  left:0%;
+  top:0%;
+  width;20%;
+}
+
+#share
+{
+  position:relative;
+  width:100%;
+  float:top;
+  margin:2px;
+}
+
+#embed
+{
+  position:relative;
+  width:100%;
+  float:top;
+  margin:2px;
+}
+
+#menu
+{
+  position:absolute;
+  right:2%;
+  top:0%;
+}
+
+.menu_el
+{
+  position:relative;
+  float:right;
+  cursor:pointer;
+  margin:3px;
+  font-size:100%;
+}
+
+#about:hover
+{
+  color:#FF3D2E;
+}
+
+#new_chat:hover
+{
+  color:#FF3D2E;
+}
+
+#about_txt
+{
+  display:none;
+}
+
+
+.chat_line_cont
+{
+ position:relative;
+ width:100%;
+}
+
+#github
+{
+  position:absolute;
+  bottom:1%;
+  right:.3%;
+  font-size:150%;
+  color:#FF3D2E;
+}

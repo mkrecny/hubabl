@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<LINK href="client/css/core.css" rel="stylesheet" type="text/css" />	
+		<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	</head>
+	<body>
+		
+		<div id='prez_cont'>
+			<div id='title_msg' class='create_el'>Start a conversation</div>
+			<input type='text' id='topic_input' value='Your topic goes here...' class='create_el'/></input>
+		</div>
+		
+		<div id='sharing'>	
+			<div id="share" class='join_el'></div>
+			<div id="embed" class='join_el'></div>
+		</div>
+		
+		<div id='menu' class='join_el'>
+			<div id='about' class='join_el menu_el'><u>About</u></div>
+			<div id='new_chat' class='join_el menu_el'><u>New</u></div>
+		</div>
+		
+		<div id='chat_box' class='join_el embed_el'>
+			<div id='topic_box' class='join_el embed_el'></div>
+			<div id='msg_box' class='join_el embed_el'></div>
+			<textarea id='msg_input_box' class='join_el embed_el'></textarea>
+		</div>
+		
+		<div id='logo'>hubabl<span id='about_txt'> connects you to conversations. @mkrecny</span></div>
+		<div id='github'><a href="http://www.google.com">github</a></div>
+	</body>
+	
+	<script type="text/javascript">
+		if(typeof exports == 'undefined')
+		{
+		    var exports = this['GLOBAL_CONF'] = {};
+		}
+	</script>	
+	
+	<script src="http://cdn.socket.io/stable/socket.io.js"></script>
+    <script src="https://www.google.com/jsapi?key=ABQIAAAA4E1UH8ieR16NhP5ZfqkqmRQ7sbJk1ivMszYJizk8SLww4fnbuxS4_5FAXbjEp6ME4kLJwCDH1d_YiQ" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+	google.load('jquery', '1.4.2');
+	google.load('search', '1');
+
+    var includes = ['resources/jquery.json-2.2.min.js',
+					'client/events.js',
+					'client/socketmanager.js',
+					'config.js',
+					'client/ui.js',
+					'client/util.js'];
+
+    google.setOnLoadCallback(function()
+    {	
+		$(document).ready(function()
+		{
+			for (var i in includes)
+            {
+                var node = $(document.createElement('script'))
+                .attr('type', 'text/javascript')
+                .attr('src', includes[i]);
+
+                $('head', document).append(node);
+            }
+		
+			$(Events.registerAll());
+				
+        });	
+		});
+		
+	</script>
+	
+</html>
