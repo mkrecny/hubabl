@@ -1,3 +1,9 @@
+Hubabl
+------
+Hubabl is a minimalistic real-time chat server. Every chat created has a bitly url.
+Hubabl is written in node.js, uses socket.io for client/server communication and redis
+lists and pubsub for chat history and chat events. It's ugly but usable : )
+
 Installation
 ----------------
 > install node.js
